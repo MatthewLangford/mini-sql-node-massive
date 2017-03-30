@@ -2,7 +2,7 @@ let express = require('express');
 let bodyParser = require('body-parser');
 let cors = require('cors');
 let massive = require('massive');
-let connectionString = "postgres://postgres:Masteryoda166@localhost/sandbox";
+
 let massiveInstance = massive.connectSync({connectionString: connectionString});
 let app = module.exports = express();
 
